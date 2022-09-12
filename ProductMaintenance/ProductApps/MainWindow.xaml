@@ -18,6 +18,8 @@
         <TextBlock Name="TotalchargeTextBox" HorizontalAlignment="Left" Height="27" Margin="198,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="106"/>
         <TextBlock HorizontalAlignment="Left" Height="34" Margin="38,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137"><Run Text="Total Charge after adding the wrap charge"/><Run Text=" ($5)"/></TextBlock>
         <TextBlock Name ="totalChargeTexBox" HorizontalAlignment="Left" Margin="198,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="69"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="315,37,0,0" TextWrapping="Wrap" Text="Total Charge After GST@10%" VerticalAlignment="Top" Width="104"/>
+        <TextBlock  Name ="GST" HorizontalAlignment="Left" Height="42" Margin="449,37,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="58"/>
 
 
     </Grid>
