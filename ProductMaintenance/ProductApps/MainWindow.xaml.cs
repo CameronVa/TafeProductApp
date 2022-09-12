@@ -21,6 +21,7 @@ namespace ProductApps
     public partial class MainWindow : Window
     {
         Product cProduct;
+        
 
         public MainWindow()
         {
@@ -31,9 +32,11 @@ namespace ProductApps
         {
             try
             {
+               
                 cProduct = new Product(Convert.ToDecimal(priceTextBox.Text), Convert.ToInt16(quantityTextBox.Text));
                 cProduct.calTotalPayment();
                 totalPaymentTextBlock.Text = Convert.ToString(cProduct.TotalPayment);
+                TotalchargeTextBox.Text = Convert.ToString(cProduct.TotalPayment + 25.0m);
             }
             catch (FormatException)
             {
@@ -47,6 +50,7 @@ namespace ProductApps
             priceTextBox.Text = "";
             quantityTextBox.Text = "";
             totalPaymentTextBlock.Text = "";
+            TotalchargeTextBox.Text = "";
         }
 
         private void closeButton_Click(object sender, RoutedEventArgs e)
